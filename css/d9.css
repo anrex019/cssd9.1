@@ -148,6 +148,12 @@
 
 }
 
+.msinpersonal {
+    max-width: 720px;
+    width: 100%;
+   
+}
+
 .main_head {
     display: flex;
     flex-direction: column;
@@ -205,7 +211,7 @@
     flex-shrink: 0;
     background-image: url(../img/image\ 2.png);
     background-repeat: no-repeat;
-    background-size: 1606px;
+    background-size: 100%;
 
 }
 
@@ -263,7 +269,7 @@
 
 .personal {
     display: flex;
-    width: 702px;
+    width: 100%;
     padding: 24px 16px;
     flex-direction: column;
     gap: 16px;
@@ -753,4 +759,21 @@ select:focus {
     align-self: stretch;
     border-radius: 8px;
     border: 1px solid #C7C7C7;
+}
+
+.personalhead {
+    justify-content: space-between;
+}
+
+.lsdtpershead {
+    display: flex;
+    gap: 24px;
+}
+
+.mainpersonal {
+    display: flex;
+    gap: 32px;
+    max-width: 720px;
+    width: 100%;
+    flex-direction: column;
 }
