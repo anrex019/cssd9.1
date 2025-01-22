@@ -462,6 +462,7 @@ label {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+    width: 100%;
 }
 
 .editlogo {
@@ -482,6 +483,8 @@ label {
     color: #14171F;
     font-family: Inter;
     font-size: 16px;
+    font-weight: 500;
+ 
 
 }
 
@@ -612,7 +615,8 @@ select:focus {
 
 .richarddiv {
     display: flex;
-    width: 346px;
+    max-width: 346px;
+    width: 100%;
     padding: 16px;
     flex-direction: column;
     align-items: center;
@@ -651,6 +655,13 @@ select:focus {
     display: flex;
     width: 100%;
     justify-content: center;
+   position: relative;
+   align-items: center;
+   
+}
+
+.photoedit {
+    position: absolute;
 }
 
 .Andriotext {
@@ -695,6 +706,7 @@ select:focus {
     align-self: stretch;
     border-radius: 12px;
     background: #FFF;
+    min-height: 256px;
 }
 
 .locationtext {
