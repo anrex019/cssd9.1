@@ -151,13 +151,14 @@
 .msinpersonal {
     max-width: 720px;
     width: 100%;
-   
+
 }
 
 .main_head {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    max-width: 1200px;
 }
 
 .mainhead ul {
@@ -206,12 +207,11 @@
 .tune {
     width: 100%;
     border-radius: 16px;
-    height: 222px;
     border: 1px solid #C7C7C7;
     flex-shrink: 0;
     background-image: url(../img/image\ 2.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
 }
 
@@ -227,7 +227,7 @@
 }
 
 .littlenav {
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     gap: 16px;
 }
@@ -236,6 +236,7 @@
     list-style-type: none;
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 
 }
 
@@ -455,6 +456,7 @@ label {
     align-items: flex-start;
     gap: 12px;
     align-self: stretch;
+    width: 100%;
 }
 
 .Department {
@@ -484,7 +486,7 @@ label {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
- 
+
 
 }
 
@@ -565,7 +567,7 @@ select {
     color: #666;
     font-size: 14px;
     cursor: pointer;
-    
+
     position: relative;
 }
 
@@ -653,9 +655,9 @@ select:focus {
     display: flex;
     width: 100%;
     justify-content: center;
-   position: relative;
-   align-items: center;
-   
+    position: relative;
+    align-items: center;
+
 }
 
 .photoedit {
@@ -787,3 +789,116 @@ select:focus {
     width: 100%;
     flex-direction: column;
 }
+
+.burgermenu {
+    display: none;
+}
+
+.lastpershead {
+    display: flex;
+    gap: 12px;
+}
+
+@media screen and (max-width:1023px) {
+    .personalhead {
+        flex-direction: column-reverse;
+    }
+    .mainpersonal {
+        max-width: none;
+    }
+
+    .richarddiv {
+        max-width: none;
+    }
+
+    .test {
+        display: flex;
+    }
+
+    .mainhead {
+        flex-direction: column;
+        align-items: unset;
+    }
+   
+}
+
+
+/* for tablet  */
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .sidebar {
+        display: none;
+    }
+
+    .burgermenu {
+        display: flex;
+    }
+
+    .littlenav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .listi {
+        flex-wrap: wrap;
+    }
+
+    .list {
+        flex-wrap: wrap;
+    }
+
+
+
+    .personalhead {
+        flex-wrap: wrap-reverse
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .sidebar {
+        display: none;
+    }
+
+    .lastpershead {
+        flex-direction: column;
+    }
+
+    .personallast {
+        width: unset;
+    }
+
+  
+
+    .burgermenu {
+        display: flex;
+    }
+
+    .twoiput {
+        flex-direction: column;
+    }
+
+    .registrationform {
+        flex-direction: column;
+    }
+
+    .mainhead {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: none;
+        display: flex;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+     .littlenav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .listi {
+        flex-wrap: wrap;
+    }
+
+    .list {
+        flex-wrap: wrap;
+    }
+}
+    
