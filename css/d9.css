@@ -11,7 +11,7 @@
 .sidebar {
     background: #14171F;
     max-width: 296px;
-
+    cursor: pointer;
     padding: 24px;
     display: flex;
     gap: 48px;
@@ -202,6 +202,7 @@
     border-radius: 50px;
     border: 1px solid #C7C7C7;
     background: #F7F7F7;
+    cursor: pointer;
 }
 
 .tune {
@@ -237,6 +238,7 @@
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    cursor: pointer;
 
 }
 
@@ -339,6 +341,7 @@ label {
     display: flex;
     align-items: center;
     gap: 8px;
+  
 }
 
 .countrycode {
@@ -361,6 +364,7 @@ label {
     border-radius: 8px;
     border: 1px solid #C7C7C7;
     background: #F9FBFC;
+    width: 100%;
 }
 
 .email {
@@ -490,7 +494,7 @@ label {
 
 }
 
-.headinfotwo {
+.headinfotwo, .headinfotwol {
     display: flex;
     align-items: flex-start;
     gap: 12px;
@@ -799,6 +803,10 @@ select:focus {
     gap: 12px;
 }
 
+.test {
+    cursor: pointer;
+}
+
 @media screen and (max-width:1023px) {
     .personalhead {
         flex-direction: column-reverse;
@@ -867,6 +875,21 @@ select:focus {
         width: unset;
     }
 
+        .headinfo {
+            flex-wrap: wrap;
+        }
+
+        .headinfotwo {
+            
+        }
+
+        .headinfotwol {
+            flex-wrap: wrap;
+        }
+
+        .lastpers {
+            all: unset;
+        }
   
 
     .burgermenu {
