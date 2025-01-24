@@ -906,7 +906,9 @@ select:focus {
         flex-wrap: wrap;
     }
 
-    
+    .test {
+        gap: 24px;
+    }
 
     .headinfotwo {}
 
