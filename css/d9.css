@@ -870,6 +870,7 @@ select:focus {
 
     .lastpershead {
         flex-direction: column;
+        width: 100%;
     }
 
     .personallast {
