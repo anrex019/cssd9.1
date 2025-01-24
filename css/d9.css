@@ -335,13 +335,14 @@ label {
 .registrationform {
     display: flex;
     gap: 16px;
+
 }
 
 .contact {
     display: flex;
     align-items: center;
     gap: 8px;
-  
+
 }
 
 .countrycode {
@@ -405,6 +406,8 @@ label {
     border-radius: 8px;
     background: #7F56D9;
     color: #FFF;
+    border: none;
+    cursor: pointer;
 }
 
 .btn {
@@ -494,7 +497,8 @@ label {
 
 }
 
-.headinfotwo, .headinfotwol {
+.headinfotwo,
+.headinfotwol {
     display: flex;
     align-items: flex-start;
     gap: 12px;
@@ -811,6 +815,7 @@ select:focus {
     .personalhead {
         flex-direction: column-reverse;
     }
+
     .mainpersonal {
         max-width: none;
     }
@@ -824,10 +829,19 @@ select:focus {
     }
 
     .mainhead {
-        flex-direction: column;
+
         align-items: unset;
     }
-   
+
+    .burgermenu {
+        display: flex;
+        width: 32px;
+        height: 32px;
+       
+        border-radius: 600px;
+        background: #F7F7F7;
+    }
+
 }
 
 
@@ -837,8 +851,19 @@ select:focus {
         display: none;
     }
 
+    .registrationform {
+        max-width: 672px;
+        width: 100%;
+    }
+
+    .inputone {
+        width: 100%;
+    }
+
     .burgermenu {
         display: flex;
+        gap: 24px;
+
     }
 
     .littlenav {
@@ -875,22 +900,22 @@ select:focus {
         width: unset;
     }
 
-        .headinfo {
-            flex-wrap: wrap;
-        }
+    .headinfo {
+        flex-wrap: wrap;
+    }
 
-        .headinfotwo {
-            
-        }
+    
 
-        .headinfotwol {
-            flex-wrap: wrap;
-        }
+    .headinfotwo {}
 
-        .lastpers {
-            all: unset;
-        }
-  
+    .headinfotwol {
+        flex-wrap: wrap;
+    }
+
+    .lastpers {
+        all: unset;
+    }
+
 
     .burgermenu {
         display: flex;
@@ -912,10 +937,12 @@ select:focus {
         padding: 12px 16px;
         gap: 12px;
     }
-     .littlenav {
+
+    .littlenav {
         display: flex;
         flex-wrap: wrap;
     }
+
     .listi {
         flex-wrap: wrap;
     }
@@ -923,5 +950,11 @@ select:focus {
     .list {
         flex-wrap: wrap;
     }
+    .mainheadtext ul li {
+        font-size: 12px;
+    }
+
+    .became {
+        font-size: 12px;
+    }
 }
-    
