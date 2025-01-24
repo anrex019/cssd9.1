@@ -213,6 +213,7 @@
     background-image: url(../img/image\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
 
 }
 
